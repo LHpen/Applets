@@ -1,0 +1,45 @@
+<!--首页抽奖内容列表-->
+<view class="content_list">
+    <view class="item">
+      <view class="content_img_conten">
+        <text class="content_img_text">达邦赞助</text>
+        <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="heightFix"></image>
+      </view>
+      <view class="conten_text">
+        <view class="conten_list">
+          <view class="conten_text1">奖品：Apple/iPhone 11 2019国行原装苹果11Pro全网通智能手机正品</view>
+          <view class="conten_text1_1">×1</view>
+        </view>
+        <view class="conten_text2">08月22日 21:00 自动开奖</view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="content_img_conten">
+        <text class="content_img_text">达邦赞助</text>
+        <image src="../../images/f6a662731b3c0c4a311c72d298d75a6.jpg" mode="heightFix"></image>
+      </view>
+      <view class="conten_text">
+        <view class="conten_list">
+          <view class="conten_text1">奖品：Chanel/香奈儿洗面奶山茶花新款三合一深层泡沫清洁洁面乳150ml</view>
+          <view class="conten_text1_1">×1</view>
+        </view>
+        <view class="conten_text2">08月22日 21:00 自动开奖</view>
+
+      </view>
+    </view>
+    <view class="item">
+      <view class="content_img_conten">
+        <text class="content_img_text">达邦赞助</text>
+        <image src="../../images/d438393189b955b21a3a0f45d7550cd.jpg" mode="heightFix"></image>
+      </view>
+      <view class="conten_text">
+        <view class="conten_list">
+          <view class="conten_text1">奖品：韩国UNNY隔离霜素颜精华防晒霜妆前乳遮瑕三合一保湿</view>
+          <view class="conten_text1_1">×1</view>
+        </view>
+        <view class="conten_text2">08月22日 21:00 自动开奖</view>
+
+      </view>
+    </view>
+  </view>

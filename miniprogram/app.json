@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#E8564F",
+    "navigationBarTitleText": "锦鲤抽奖",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#E8564F",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "福利",
+      "iconPath": "./images/tab_gift_active.png",
+      "selectedIconPath": "./images/tab_gift_active.png"
+    }, {
+      "pagePath": "pages/add/index",
+      "text": "发布",
+      "iconPath": "./images/tab_add.png",
+      "selectedIconPath": "./images/tab_add_active.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-grid":"@vant/weapp/grid",
+    "van-grid-item":"@vant/weapp/grid-item",
+    "van-notice-bar":"@vant/weapp/notice-bar",
+    "van-card":"@vant/weapp/card",
+    "van-tag":"@vant/weapp/tag",
+    "van-icon":"@vant/weapp/icon",
+    "van-divide":"@vant/weapp/divider",
+    "van-uploader":"@vant/weapp/uploader"
+}
+
+
+ 
+}

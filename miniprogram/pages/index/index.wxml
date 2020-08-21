@@ -1,0 +1,92 @@
+<!-- 头部 -->
+<view class="header">
+  <view class="information">
+    <view class="information_item">
+      <view>
+        <view class="information_text">131</view>币
+      </view>
+      <view class="information_btn">去兑换 ></view>
+    </view>
+    <view class="line"></view>
+    <view class="information_item">
+      <view>
+        <view class="information_text">0.68</view>元
+      </view>
+      <view class="information_btn">去提现 ></view>
+    </view>
+  </view>
+</view>
+
+<!--宫格 -->
+<van-grid square="false" border="false" clickable="ture">
+  <van-grid-item icon="records" text="每日签到" color="#22B1FD" dot />
+  <van-grid-item icon="point-gift-o" text="兑换商城" color="#22B1FD" dot />
+  <van-grid-item icon="gem-o" text="幸运大礼" color="" dot />
+  <van-grid-item icon="location-o" text="附近活动" color="" />
+</van-grid>
+
+<!-- 通知栏 -->
+<van-notice-bar left-icon="volume" :scrollable="false" text="锦鲤广场：恭喜彭xx获得一杯哈茶奥利奥抹茶奶茶代金卷" mode="link" />
+
+<!-- 内容 -->
+<view class="content">
+  <view class="content_header">
+    推荐福利
+  </view>
+  <content-list></content-list>
+
+  <!-- 自助福利 -->
+  <view class="content_header">自助福利</view>
+  <van-card 
+    thumb="https://6c68-lhwsh-xcx-d06i2-1302650116.tcb.qcloud.la/zizhu/f6a662731b3c0c4a311c72d298d75a6.jpg?sign=68bcf924cfda6a85662e3c950dc60e2a&t=1597980519">
+    <view slot="footer">
+      <van-tag round type="warning" size="medium" text-color="#fff">
+        <van-icon name="youzan-shield" />  已认证 </van-tag>
+    </view>
+    <view slot="tags">
+      <van-tag round type="danger" size="medium" color="#EFEFEF" text-color="#8A8A8A">达邦赞助</van-tag>
+    </view>
+    <view slot="title">
+      <view>奖品：韩国UNNY隔离霜素颜精华防晒霜妆前乳遮瑕三合一保湿</view>
+      <view class="title_text1">08月22日 20:30分 自动开奖</view>
+    </view>
+    <view slot="bottom">
+      <view class="bottom_text"> <van-icon name="underway" />  点击参与 </view>
+    </view>
+  </van-card>
+  <van-card 
+    thumb="https://6c68-lhwsh-xcx-d06i2-1302650116.tcb.qcloud.la/zizhu/f6a662731b3c0c4a311c72d298d75a6.jpg?sign=68bcf924cfda6a85662e3c950dc60e2a&t=1597980519">
+    <view slot="footer">
+      <van-tag round type="warning" size="medium" text-color="#fff">
+        <van-icon name="youzan-shield" />  已认证 </van-tag>
+    </view>
+    <view slot="tags">
+      <van-tag round type="danger" size="medium" color="#EFEFEF" text-color="#8A8A8A">达邦赞助</van-tag>
+    </view>
+    <view slot="title">
+      <view>奖品：韩国UNNY隔离霜素颜精华防晒霜妆前乳遮瑕三合一保湿</view>
+      <view class="title_text1">08月22日 20:30分 自动开奖</view>
+    </view>
+    <view slot="bottom">
+      <view class="bottom_text"> <van-icon name="underway" />  点击参与 </view>
+    </view>
+  </van-card>
+  <van-card 
+    thumb="https://6c68-lhwsh-xcx-d06i2-1302650116.tcb.qcloud.la/zizhu/f6a662731b3c0c4a311c72d298d75a6.jpg?sign=68bcf924cfda6a85662e3c950dc60e2a&t=1597980519">
+    <view slot="footer">
+      <van-tag round type="warning" size="medium" text-color="#fff">
+        <van-icon name="youzan-shield" />  已认证 </van-tag>
+    </view>
+    <view slot="tags">
+      <van-tag round type="danger" size="medium" color="#EFEFEF" text-color="#8A8A8A">达邦赞助</van-tag>
+    </view>
+    <view slot="title">
+      <view>奖品：韩国UNNY隔离霜素颜精华防晒霜妆前乳遮瑕三合一保湿</view>
+      <view class="title_text1">08月22日 20:30分 自动开奖</view>
+    </view>
+    <view slot="bottom">
+      <view class="bottom_text"> <van-icon name="underway" />  点击参与 </view>
+    </view>
+  </van-card>
+
+</view>

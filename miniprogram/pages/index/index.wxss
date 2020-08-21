@@ -1,0 +1,78 @@
+/* miniprogram/pages/index/index.wxss */
+
+.header {
+  height: 140px;
+  background-image: linear-gradient(#E8564F, #F87261);
+  border-radius: 100% 100% 100% 100% / 0% 0% 30% 30%;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} 
+
+.line {
+  vertical-align: middle;
+  display: inline-block;
+  height: 50px;
+  border: solid 0.5px #ccc;
+  margin-top: 50px;
+}
+
+.information_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.information_text {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.information_btn{
+  display: flex;
+  height: 25px;
+  width: 80px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #E8564F;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #F0F0F0;
+
+}
+
+.content_header {
+  color: #E95751;
+  font-weight: 700;
+  font-size: 18px;
+  padding:10px;
+}
+
+.van-card {
+  margin-bottom: 10px;
+}
+
+.title_text1{
+  color: #8B8B8B;
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.bottom_text {
+  color: #E95751;
+  font-size: 14px;
+  padding-top: 10px;
+}

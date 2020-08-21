@@ -1,0 +1,61 @@
+/* components/list/list.wxss */
+
+.item {
+  margin-bottom: 15px;
+}
+
+.content_img_conten {
+  height: 500rpx;
+  width: 100vw;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content_img_text{
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 100px;
+  height: 25px;
+  background-color: #8B8B8B;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.conten_list {
+  display: flex;
+}
+
+.conten_text {
+  width: auto;
+  background-color: #fff;
+  padding: 10px 0;
+  padding-left: 15px;
+}
+
+.conten_text1 {
+  width: 70vw;
+  font-size: 18px;
+  font-weight: 400;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 1;  /*最多显示5行*/
+  overflow: hidden;  /*超出隐藏*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;  /*强制英文单词自动换行*/
+  margin-bottom: 10px;
+}
+
+.conten_text1_1 {
+  color: #8B8B8B;
+  font-size: 18px;
+}
+
+.conten_text2 {
+  font-size: 14px;
+  color: #8B8B8B;
+}
