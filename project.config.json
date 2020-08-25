@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -26,6 +26,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -34,7 +35,7 @@
   },
   "appid": "wx279cf0dfca87a113",
   "projectname": "choujiang",
-  "libVersion": "2.8.1",
+  "libVersion": "2.12.1",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {

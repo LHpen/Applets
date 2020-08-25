@@ -5,9 +5,52 @@ Page({
    * 页面的初始数据
    */
   data: {
+    radio: '1',
+    two:'1',
+    value: '',
+    value1: '',
+    checked: true,
+    show: false,
+    actions: [
+      {
+        name: '选项',
+      },
+      {
+        name: '选项',
+      },
+      {
+        name: '选项',
+        subname: '副文本',
+        openType: 'share',
+      },
+    ]
 
   },
+  onClose() {
+    this.setData({ show: false });
+  },
 
+  onSelect(event) {
+    console.log(event.detail);
+  },
+  onChange(event) {
+    this.setData({
+      radio: event.detail,
+    });
+  },
+  onChange1(event) {
+    this.setData({
+      two: event.detail,
+    });
+  },
+  onChange2({ detail }) {
+    // 需要手动对 checked 状态进行更新
+    this.setData({ checked: detail });
+
+  },
+  toggleActionSheet1() {
+    this.toggle('show1');
+  },
   /**
    * 生命周期函数--监听页面加载
    */

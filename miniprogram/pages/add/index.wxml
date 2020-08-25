@@ -1,0 +1,61 @@
+<view class="content">
+  <view class="content_center">
+
+    <view class="header">
+      <view>
+        <image src="../../images/1.png" mode="heightFix"></image>
+      </view>
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+    </view>
+
+    <view class="type type">
+      <van-cell title="奖品类型" center>
+        <van-radio-group value="{{ radio }}" bind:change="onChange" slot="right-icon">
+          <van-radio name="1">实物</van-radio>
+          <van-radio name="2">虚拟</van-radio>
+        </van-radio-group>
+      </van-cell>
+    </view>
+
+    <view class="input_coneten type">
+      <van-cell-group>
+        <van-field value="{{ value }}" placeholder="请输入奖品名称" border="{{ false }}" bind:change="onChange" label="奖品名称"
+          input-align="right" border="ture" />
+        <van-field value="{{ value }}" placeholder="请输入数量" border="{{ false }}" bind:change="onChange" label="奖品数量"
+          input-align="right" border="ture" />
+
+        <van-cell title="开奖条件" center>
+          <van-radio-group value="{{ two }}" bind:change="onChange1" slot="right-icon">
+            <van-radio name="1">按时间开奖</van-radio>
+            <van-radio name="2">按人数开奖</van-radio>
+          </van-radio-group>
+        </van-cell>
+
+        <van-field value="{{ value }}" placeholder="请输入开奖人数" border="{{ false }}" bind:change="onChange" label="开奖人数"
+          input-align="right" border="ture" />
+      </van-cell-group>
+    </view>
+
+    <view class="explain type">
+      <van-cell title="活动说明">
+        <van-switch slot="right-icon" checked="{{ checked }}" bind:change="onChange2" size="20px" />
+      </van-cell>
+
+      <van-cell-group wx:if="{{ checked }}">
+        <van-field custom-style="height:150rpx" value="{{ value1 }}" border="{{ ture }}" bind:change="onChange"
+          placeholder="请输入本次抽奖的说明" />
+      </van-cell-group>
+
+    </view>
+
+    <view class="info type">
+      <van-button type="primary" bind:click="toggleActionSheet1">弹出菜单</van-button>
+  <van-action-sheet
+    show="{{ show1 }}"
+    actions="{{ action1 }}"
+    bind:close="toggleActionSheet1"
+    bind:select="toggleActionSheet1"
+  />
+    </view>
+  </view>
+</view>
