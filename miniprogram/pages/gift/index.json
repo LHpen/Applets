@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "content-list":"../../components/list/list"
+
+  }
+}

@@ -1,0 +1,78 @@
+<!--pages/details/index.wxml-->
+<view class="content">
+
+  <view class="content_head">
+    <view class="head_img">
+      <van-image width="10rem" height="10rem" fit="contain"
+        src="cloud://lhwsh-xcx-d06i2.6c68-lhwsh-xcx-d06i2-1302650116/zizhu/581a357eddebd07d7060e542c490168.jpg" />
+    </view>
+    <view class="content_info">
+      <view class="head_info">
+        <view class="info_jp">
+          奖品：iPhone 11 2019国行原装
+          <text class="info_sl">×1</text>
+        </view>
+        <view class="info_tj">
+          距离开奖:
+          <van-count-down use-slot time="{{ time }}" bind:change="onChange">
+            <text class="item">{{ timeData.hours }}</text>
+            <text class="item">{{ timeData.minutes }}</text>
+            <text class="item">{{ timeData.seconds }}</text>
+          </van-count-down>
+        </view>
+      </view>
+    </view>
+    <van-divider hairline />
+    <van-cell title="赞助商" size="14px" is-link value="达邦文化" border="{{ false }}" bind:click="click_info"/>
+  </view>
+
+  <!-- 抽奖说明 -->
+  <view class="explain">
+    <view class="explain_text">
+      <view>活动说明：</view>
+      <view> 1.每个用户每天可免费获得五次抽奖机会，还可以通过观看广告获得额外机会，每人每天最多获得七次抽奖机会，每日0点更新。
+      </view>
+      <view>
+        2.抽奖后，用户需要观看广告才能获得奖品，退出视为自动放弃。</view>
+      <view>
+        3.如发现有恶意刷的行为，简书有权不发放或撤回发放的奖品。
+      </view>
+    </view>
+
+    <van-divider customStyle="border-color: #ddd" hairline />
+
+    <view class="explain_info">
+      <view class="explain_xq">
+        <van-icon name="phone-circle" />
+        达邦文化
+      </view>
+      <view class="explain_but">
+        <van-button round color="#706551">添加好友</van-button>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 按钮 -->
+  <view class="circular_content">
+    <view class="circular">
+      点击抽奖
+    </view>
+  </view>
+  <view class="circular_text">已有xxxx人参与</view>
+
+  <!-- 详情 -->
+  <view class="info_background">
+    <view class="info_img">
+    <image class="info_imge" src="../../images/12.jpg" mode="widthFix"></image>
+  </view>
+</view>
+<view class="button">
+  <van-button round type="info" color="#E9564F" style="width:40%" block bind:click="onChange_qiandao">分享给好友</van-button>
+  <van-button round type="default" style="width:40%" block>参与其他活动</van-button>
+</view>
+
+<van-divider contentPosition="center" borderColor="#ddd" custom-style="padding-top:100px;position: relative;bottom: 90px;">
+  达邦技术
+</van-divider>
+</view>

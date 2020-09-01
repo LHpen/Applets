@@ -1,0 +1,7 @@
+<van-tabs active="a" nav-class="ss" color="#fff" >
+  <van-tab title="全部" name="a" title-style="color:#fff"></van-tab>
+  <van-tab title="待付款" name="b" title-style="color:#fff"></van-tab>
+  <van-tab title="待收货" name="c" title-style="color:#fff"></van-tab>
+  <van-tab title="已完成" name="d" title-style="color:#fff"></van-tab>
+
+</van-tabs>

@@ -1,56 +1,48 @@
-// pages/add/index.js
+// pages/qiandao/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    radio: '1',
-    two:'1',
-    value: '',
-    value1: '',
-    checked: true,
-    show1: false,
-    action1: [
-      { name: '微信好友' },
-      { name: '微信群' },
-      { name: '公众号'}
-    ],
-    info_name:"微信好友"
+    checked: false,
 
+    steps: [
+      {
+        text: '1天',
+        desc: '+15',
+      },
+      {
+        text: '2天',
+        desc: '+20',
+      },
+      {
+        text: '3天',
+        desc: '+20',
+      },
+      {
+        text: '4天',
+        desc: '+40',
+      },
+      {
+        text: '5天',
+        desc: '+25',
+      },
+      {
+        text: '6天',
+        desc: '+25',
+      },
+      {
+        text: '7天',
+        desc: '+100',
+      }
+      
+    ]
   },
-  toggle(type) {
-    this.setData({
-      [type]: !this.data[type]
-    });
-  },
-  toggleActionSheet1(event) {
-    console.log(event)
-    this.setData(
-      {info_name:event.detail.name}
-    );
-    this.toggle('show1');
-  },
-  onClose() {
-    this.setData({ show1: false });
-  },
-
-  onChange(event) {
-    this.setData({
-      radio: event.detail,
-    });
-  },
-  onChange1(event) {
-    this.setData({
-      two: event.detail,
-    });
-  },
-  onChange2({ detail }) {
+  onChange({ detail }) {
     // 需要手动对 checked 状态进行更新
     this.setData({ checked: detail });
-
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

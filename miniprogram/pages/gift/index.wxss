@@ -1,0 +1,4 @@
+/* pages/gift/index.wxss */
+.content {
+  background-color: #ddd;
+}

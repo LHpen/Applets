@@ -1,7 +1,7 @@
 <!--首页抽奖内容列表-->
 <view class="content_list">
-    <view class="item">
-      <view class="content_img_conten">
+    <view class="item" bindtap="binde">
+      <view class="content_img_conten" >
         <text class="content_img_text">达邦赞助</text>
         <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="heightFix"></image>
       </view>
@@ -28,6 +28,7 @@
 
       </view>
     </view>
+    
     <view class="item">
       <view class="content_img_conten">
         <text class="content_img_text">达邦赞助</text>

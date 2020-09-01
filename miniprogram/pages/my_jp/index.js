@@ -1,56 +1,19 @@
-// pages/add/index.js
+// pages/my_jp/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    radio: '1',
-    two:'1',
-    value: '',
-    value1: '',
-    checked: true,
-    show1: false,
-    action1: [
-      { name: '微信好友' },
-      { name: '微信群' },
-      { name: '公众号'}
-    ],
-    info_name:"微信好友"
+    active: 1
 
   },
-  toggle(type) {
-    this.setData({
-      [type]: !this.data[type]
-    });
-  },
-  toggleActionSheet1(event) {
-    console.log(event)
-    this.setData(
-      {info_name:event.detail.name}
-    );
-    this.toggle('show1');
-  },
-  onClose() {
-    this.setData({ show1: false });
-  },
-
   onChange(event) {
-    this.setData({
-      radio: event.detail,
+    wx.showToast({
+      title: `切换到标签 ${event.detail.name}`,
+      icon: 'none',
     });
   },
-  onChange1(event) {
-    this.setData({
-      two: event.detail,
-    });
-  },
-  onChange2({ detail }) {
-    // 需要手动对 checked 状态进行更新
-    this.setData({ checked: detail });
-
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

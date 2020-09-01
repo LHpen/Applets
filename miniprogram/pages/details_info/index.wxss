@@ -1,0 +1,22 @@
+/* pages/details_info/index.wxss */
+.copy_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy_content {
+  margin: 10px 5px;
+}
+
+.contents {
+  padding:10px 30px;
+  text-align: center;
+  background-color: #F6F5F5;
+  border-radius: var(--button-round-border-radius,999px);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,64 @@
+.background {
+  background-color: #F0F0F0;
+  height: 100vh;
+}
+
+.header {
+  height: 140px;
+  background-image: linear-gradient(#E8564F, #F87261);
+  border-radius: 100% 100% 100% 100% / 0% 0% 30% 30%;
+}
+
+.info {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.info_text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info_text text {
+  font-size: 1rem;
+}
+
+.info_text_1 {
+  color: #fff;
+  text-align: center;
+
+}
+.info_steps {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+
+
+.info_steps_text {
+  color: #373737;
+  font-weight: 700;
+  float: left;
+  padding-left: 12px;
+}
+.info_steps_text text {
+  color: #FB9C2F;
+}
+
+.info_steps_tixing{
+  color:#AFAFAF;
+  float:right;
+  padding-right: 12px;
+}
+
+.info_button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}

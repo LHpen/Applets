@@ -1,9 +1,8 @@
 <view class="content">
   <view class="content_center">
-
     <view class="header">
       <view>
-        <image src="../../images/1.png" mode="heightFix"></image>
+        <image src="../../images/1.png" mode="center"></image>
       </view>
       <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
     </view>
@@ -49,13 +48,20 @@
     </view>
 
     <view class="info type">
-      <van-button type="primary" bind:click="toggleActionSheet1">弹出菜单</van-button>
-  <van-action-sheet
-    show="{{ show1 }}"
-    actions="{{ action1 }}"
-    bind:close="toggleActionSheet1"
-    bind:select="toggleActionSheet1"
-  />
+      <van-cell title="推广方式" bind:click="toggleActionSheet1" is-link>{{info_name}}</van-cell>
+
+      <van-action-sheet show="{{ show1 }}" actions="{{ action1 }}" bind:select="toggleActionSheet1"
+        bind:close="onClose" />
+      <van-cell title="添加二维码" center>
+        <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+      </van-cell>
+      <van-cell-group>
+        <van-field value="{{ value }}" placeholder="请输入微信" border="{{ false }}" bind:change="onChange" label="发起人"
+          input-align="right" border="ture" />
+      </van-cell-group>
+
     </view>
+    <van-button round color="#FD3D38" type="info" size="large" class="button_tail" block>确认发布</van-button>
+
   </view>
 </view>

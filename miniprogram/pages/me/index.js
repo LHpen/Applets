@@ -1,63 +1,36 @@
-// pages/add/index.js
+// pages/me/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    radio: '1',
-    two:'1',
-    value: '',
-    value1: '',
-    checked: true,
-    show1: false,
-    action1: [
-      { name: '微信好友' },
-      { name: '微信群' },
-      { name: '公众号'}
-    ],
-    info_name:"微信好友"
 
   },
-  toggle(type) {
-    this.setData({
-      [type]: !this.data[type]
-    });
+  onGotUserInfo: function (e) {
+    console.log("nickname=" + e.detail.userInfo.nickName);
   },
-  toggleActionSheet1(event) {
-    console.log(event)
-    this.setData(
-      {info_name:event.detail.name}
-    );
-    this.toggle('show1');
+  click_info:function(){
+    wx.navigateTo({
+      url: '/pages/details_info/index',
+    })
   },
-  onClose() {
-    this.setData({ show1: false });
-  },
-
-  onChange(event) {
-    this.setData({
-      radio: event.detail,
-    });
-  },
-  onChange1(event) {
-    this.setData({
-      two: event.detail,
-    });
-  },
-  onChange2({ detail }) {
-    // 需要手动对 checked 状态进行更新
-    this.setData({ checked: detail });
-
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  click_jp:function () {
+    wx.navigateTo({
+      url: '/pages/my_jp/index',
+    })
+  },
+  click_dd:function () {
+    wx.navigateTo({
+      url: '/pages/my_dd/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

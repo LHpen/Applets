@@ -1,0 +1,8 @@
+<view class="copy_content">
+<view class="contents">{{contents}} </view>
+<van-button round color="#FD3D38" bindtap='copyText' data-text="{{contents}}">点击复制</van-button>
+</view>
+
+<view class="img">
+<image src="cloud://lhwsh-xcx-d06i2.6c68-lhwsh-xcx-d06i2-1302650116/zizhu/1598948091(1).jpg" mode="widthFix" ></image>
+</view>

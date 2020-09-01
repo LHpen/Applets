@@ -1,0 +1,443 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <view style="background-color:#EEE">
+  <van-tab title="热销产品">
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </van-tab>
+
+  <van-tab title="热门兑换">
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </van-tab>
+
+  <van-tab title="特惠专享">
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </van-tab>
+
+  <van-tab title="爆款商品">
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class="content_list">
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list_img">
+          <image src="../../images/581a357eddebd07d7060e542c490168.jpg" mode="aspectFit"></image>
+        </view>
+        <view>
+          <view class="info">Apple iPhone 11 64g</view>
+          <view class="info_text">已有25497人兑换</view>
+        </view>
+        <view>
+          <view class="icon">
+            <van-icon name="gold-coin" color="#FFD151" size="22px" />
+            <text>50w+5.90元</text>
+            <van-tag type="warning" class="tag">包邮</van-tag>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <view class="footer">
+      更多商品，敬请期待。
+  </view>
+</view>
+
+</van-tabs>
+<view class="button">
+  <van-button round type="info" color="#E9564F" style="width:40%" block bind:click="onChange_qiandao">获得更多幸运币</van-button>
+  <van-button round type="default" style="width:40%" block>我的订单</van-button>
+</view>

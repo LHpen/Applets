@@ -1,7 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/add/index"
+    "pages/add/index",
+    "pages/me/index",
+    "pages/qiandao/index",
+    "pages/shopping/index",
+    "pages/gift/index",
+    "pages/details/index",
+    "pages/details_info/index",
+    "pages/my_jp/index",
+    "pages/my_dd/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,6 +32,11 @@
       "text": "发布",
       "iconPath": "./images/tab_add.png",
       "selectedIconPath": "./images/tab_add_active.png"
+    }, {
+      "pagePath": "pages/me/index",
+      "text": "我的",
+      "iconPath": "./images/tab_my.png",
+      "selectedIconPath": "./images/tab_my_active.png"
     }]
   },
   "sitemapLocation": "sitemap.json",
@@ -44,9 +57,12 @@
     "van-radio": "@vant/weapp/radio/index",
     "van-radio-group": "@vant/weapp/radio-group/index",
     "van-field": "@vant/weapp/field/index",
-    "van-action-sheet": "@vant/weapp/action-sheet/index"
-
-
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-count-down": "@vant/weapp/count-down/index"
 
 }
 

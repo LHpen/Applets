@@ -1,0 +1,20 @@
+<view class="background">
+  <view class="header">
+    <view class="info">
+      <view>
+        <view class="info_text">131<text>币</text></view>
+        <view class="info_text_1">每日签到领取幸运币，连续签到领大礼</view>
+      </view>
+      <view class="info_steps">
+        <view class="info_steps_text">已连续签到<text>0</text>天</view>
+        <view class="info_steps_tixing">签到提醒
+          <van-switch checked="{{ checked }}" bind:change="onChange" size="15px" />
+        </view>
+        <view style="clear: both;"></view>
+        <van-divider />
+        <van-steps steps="{{ steps }}" active="{{ active }}" />
+        <van-button round type="info" color="#E8564F" class="info_button">立即签到</van-button>
+      </view>
+    </view>
+  </view>
+</view>

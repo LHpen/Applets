@@ -1,0 +1,44 @@
+<!--pages/me/index.wxml-->
+<view style="background-color:#F0F0F0 ;height:100vh">
+  <view class="background">
+
+    <view class='header'>
+      <view class="header_img">
+        <open-data type="userAvatarUrl" class="userinfo" mode="cover"></open-data>
+        <open-data type="userNickName"></open-data>
+        <view>同步微信资料</view>
+      </view>
+      <view class="header_info">
+        <view>
+          3<view class="header_info_texte">参与抽奖</view>
+        </view>
+        <view>
+          3<view class="header_info_texte">发起抽奖</view>
+        </view>
+        <view>
+          1<view class="header_info_texte">中奖纪录</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <van-cell title="我的奖品" is-link bind:click="click_jp">
+        <van-icon slot="icon" name="gift" size="21px" color="#E9564F" />
+      </van-cell>
+      <van-cell title=" 我的订单" is-link bind:click="click_dd">
+        <van-icon slot="icon" name="gem" size="21px" color="#E9564F" />
+      </van-cell>
+      <van-cell title="商务合作" is-link bind:click="click_info">
+        <van-icon slot="icon" name="friends" size="21px" color="#E9564F" />
+      </van-cell>
+      <van-cell title="联系客服" is-link>
+        <van-icon slot="icon" name="service" size="21px" color="#E9564F" />
+      </van-cell>
+    </view>
+    <van-divider contentPosition="center" textColor="#DADADA">广告
+    </van-divider>
+    <view class="foot">
+      <image class="foot_img" src="../../images/43.jpg" mode="widthFix" show-menu-by-longpress="ture"></image>
+    </view>
+  </view>
+
+</view>
