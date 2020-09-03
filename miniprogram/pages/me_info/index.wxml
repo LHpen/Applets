@@ -1,0 +1,5 @@
+<van-tabs active="a" nav-class="ss" color="#fff" >
+  <van-tab title="参与抽奖" name="a" title-style="color:#fff"></van-tab>
+  <van-tab title="发起抽奖" name="b" title-style="color:#fff"></van-tab>
+  <van-tab title="中奖纪录" name="c" title-style="color:#fff"></van-tab>
+</van-tabs>

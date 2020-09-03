@@ -1,0 +1,71 @@
+.background_1 {
+  background-color: #F0F0F0;
+}
+
+.page-section {
+  background-color: #fff;
+}
+
+.img {
+  height: 340px;
+}
+
+.img_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper_text {
+  background-color: #746565;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.swiper_text_icon {
+  color: #FFD15A;
+  padding: 0px 8px;
+}
+
+.ddd {
+  color: #ABABAB;
+}
+
+.dh_explain {
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.dh_head {
+  padding:10px;
+  font-weight: 700;
+}
+
+.dh_body {
+  padding: 10px;
+  line-height: 2rem;
+}
+
+.dh_img_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dh_img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.dh_but {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

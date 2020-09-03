@@ -8,8 +8,10 @@
     "pages/gift/index",
     "pages/details/index",
     "pages/details_info/index",
-    "pages/my_jp/index",
-    "pages/my_dd/index"
+    "pages/my_dd/index",
+    "pages/shopping_xq/index",
+    "pages/me_info/index"
+
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

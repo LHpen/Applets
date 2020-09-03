@@ -1,4 +1,0 @@
-<van-tabs active="a" nav-class="ss" color="#fff" >
-  <van-tab title="现金红包卷" name="a" title-style="color:#fff"></van-tab>
-  <van-tab title="福利奖品" name="b" title-style="color:#fff"></van-tab>
-</van-tabs>

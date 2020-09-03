@@ -35,7 +35,7 @@
   },
   "appid": "wx279cf0dfca87a113",
   "projectname": "choujiang",
-  "libVersion": "2.12.1",
+  "libVersion": "2.12.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
@@ -60,7 +60,14 @@
     },
     "miniprogram": {
       "current": -1,
-      "list": []
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/qiandao/index",
+          "pathName": "pages/qiandao/index",
+          "scene": null
+        }
+      ]
     }
   }
 }

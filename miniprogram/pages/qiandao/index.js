@@ -5,8 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    day1:0,
+    integral:0,
     checked: false,
-
     steps: [
       {
         text: '1天',
@@ -43,6 +44,23 @@ Page({
     // 需要手动对 checked 状态进行更新
     this.setData({ checked: detail });
   },
+  // 立即签到 调运云函数
+  click_qd(c){
+    wx.cloud.callFunction({
+      name: "qiandao",
+      data:{
+        a:0,
+        b:0
+      }
+
+    }).then((res) => {
+      console.log(res.result)
+      console.log(c)
+    }).catch(console.error)
+  },
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */

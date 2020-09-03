@@ -1,29 +1,13 @@
-// pages/shopping/index.js
+// pages/me_info/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active: 0
+
   },
-  onChange(event) {
-    console.log(event)
-    wx.showToast({
-      title: `切换到标签 ${event.detail.name}`,
-      icon: 'none',
-    });
-  },
-  onChange_qiandao(event) {
-    wx.navigateTo({
-      url: '/pages/qiandao/index',
-    })
-  },
-  click_xq(){
-    wx.navigateTo({
-      url: '/pages/shopping_xq/index',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

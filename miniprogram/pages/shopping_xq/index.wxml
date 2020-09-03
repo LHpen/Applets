@@ -1,0 +1,48 @@
+<view class="background_1">
+  <view class="page-section">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+      class="img">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item class="img_style">
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="swiper_text">
+      <van-icon name="gold-coin" class="swiper_text_icon" />50w幸运币+5.90元<text
+        style="text-decoration:line-through;padding-left:5px;font-size:13px;color:#A99898">￥4999</text></view>
+  </view>
+
+  <van-cell-group>
+    <van-cell value="剩余0件">
+      <view slot="title">
+        <view class="van-cell-text">Apple iPhone 11 64g</view>
+        <van-tag plain type="warning" style="padding-right:10px">包邮</van-tag>
+        <van-tag plain type="warning">全新</van-tag>
+
+      </view>
+    </van-cell>
+    <van-cell title="点击填写收货地址" title-class="ddd" is-link />
+  </van-cell-group>
+
+  <!-- 兑换说明 -->
+  <view class="dh_explain">
+    <view class="dh_head">兑换说明</view>
+    <view class="dh_body">1、商品兑换成功后，3个工作日内发货，所有兑换商品包
+      邮，不收取其他费用; 2、在兑换商品前，请先确保收件
+      人信息准确无误，如因地址或者手机号填写错误，导致无
+      法收到快递，将不补寄商品;3、幸运币兑换的商品不支
+      持退款，收到有质量问题请联系客服处理。4、由于快递
+      条件的限制，部分地区(如:新疆、西藏、青海、内蒙
+      古、甘肃、宁夏、海南、港澳台地区）暂不支持发货，带
+      来不便，敬请谅解。
+    </view>
+    <view class="dh_img_content">
+      <image src="../../images/12.jpg" mode="widthFix" class="dh_img"></image>
+    </view>
+  </view>
+
+  <view class="dh_but">
+    <van-button round color="#E8564F" custom-style="width:90vw;">立即兑换</van-button>
+  </view>
+</view>

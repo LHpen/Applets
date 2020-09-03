@@ -21,15 +21,17 @@ Page({
   onLoad: function (options) {
 
   },
-  click_jp:function () {
-    wx.navigateTo({
-      url: '/pages/my_jp/index',
-    })
-  },
+ 
   click_dd:function () {
     wx.navigateTo({
       url: '/pages/my_dd/index',
     })
+  },
+  click_me_info:function(){
+    wx.navigateTo({
+      url: '/pages/me_info/index',
+    })
+    console.log(11)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

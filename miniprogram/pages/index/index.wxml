@@ -28,7 +28,7 @@
 </van-grid>
 
 <!-- 通知栏 -->
-<van-notice-bar left-icon="volume" :scrollable="false" text="锦鲤广场：恭喜彭xx获得一杯哈茶奥利奥抹茶奶茶代金卷" mode="link" />
+<van-notice-bar left-icon="volume" :scrollable="false" text="锦鲤广场：恭喜彭xx获得一杯哈茶奥利奥抹茶奶茶代金卷；恭喜罗xx获得一张15-10优惠卷" mode="link" />
 
 <!-- 内容 -->
 <view class="content">
