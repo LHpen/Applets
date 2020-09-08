@@ -61,22 +61,24 @@ Page({
 
   // 签到消息订阅
   qiandao_dy() {
-    // that 指的是 qiandao_dy（）函数这个环境
     const that = this
+    
     // 保存模板id 集合
     const tmplIds = [
       "22P7cxiDz6zsPxWkIKcsfCWxSo-wXtSpYnk3n5VqKmk"
     ];
+
     // 调起客户端小程序订阅消息界面
     wx.requestSubscribeMessage({
       tmplIds: tmplIds,
-      success:res => {
+      success: res => {
         console.log("订阅消息API调用成功：",res)
+
         // 查询是否订阅过
         that.addMessages().then( id =>{
           tmplIds.map(function(item,index) {
           // 如果同意订阅就执行
-            if (res[item]=== "accept"){
+            if (res[item] === "accept"){
               console.log("该模板ID用户同意授权",item)
               that.subscribeNum(item,id)
             }
@@ -92,6 +94,7 @@ Page({
 
 // 查询用户订阅过的订阅消息
     async addMessages(){
+      const db = wx.cloud.database()
 
       // 指定查询条件获取集合数据
     const messages = await db.collection('messages').where({
@@ -114,21 +117,24 @@ Page({
 
     async subscribeNum(item,id){
         //注意传入的item是遍历，id为addMessages的id
-      const subs = await db.collection('messages').where({
+        const db = wx.cloud.database()
+        const _ = db.command;
+        const subs = await db.collection('messages').where({
         _openid:'{openid}',
-        'templs':_.elemMatch({
+        'templs':db.command.elemMatch({
           templateId:item
         })
       }).get()
 
-      console('用户订阅列表',subs)
+      console.log('用户订阅列表',subs)
 
         //如果用户之前没有订阅过订阅消息就创建一个订阅消息的记录
 
-        if(subs.data.length = 0 ) {
+
+        if(subs.data.length == 0 ) {
           db.collection('messages').doc(id).update({
             data: {
-              templs:_.push({
+              templs:db.command.push({
                 each:[{templateId:item, //订阅 
                   page:"",
                   data:{},
@@ -142,13 +148,13 @@ Page({
             }
           })
         } else {
-          db.collection('messages').wher({
+          db.collection('messages').where({
             _id:id,
             "templs.templateId":item
           })
           .update({
             data:{
-              "templs.$.subNum":_.inc(1)
+              "templs.$.subNum":db.command.inc(1)
             }
           })
         }
